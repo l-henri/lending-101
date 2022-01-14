@@ -9,4 +9,9 @@ interface IExerciceSolution
 	function borrowSomeTokens() external;
 
 	function repaySomeTokens() external;
+
+	function doAFlashLoan() external;
+
+	function repayFlashLoan() external;
 }
+

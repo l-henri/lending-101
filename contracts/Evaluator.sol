@@ -151,7 +151,7 @@ contract Evaluator
 		}
 	}
 
-	function ex9_showContractCanRepayTokens()
+	function ex7_showContractCanRepayTokens()
 	public
 	{
 		// Reading initial variableDebtUSDC balance
@@ -194,6 +194,36 @@ contract Evaluator
 		{
 			exerciceProgression[msg.sender][8] = true;
 			TDAAVE.distributeTokens(msg.sender, 2);
+		}
+	}
+
+	function ex9_performFlashLoan()
+	public
+	{	
+		// Check https://docs.aave.com/developers/guides/flash-loans
+
+		// Reading initial aDai balance
+		uint256 initialBalance = USDC.balanceOf(address(studentExercice[msg.sender]));
+
+		// Trigger flash loan launch function
+		studentExercice[msg.sender].doAFlashLoan();
+
+		// Read end balance
+		uint256 endBalance = USDC.balanceOf(address(studentExercice[msg.sender]));
+
+		// Your contract has to borrow 1M USDC. The USDC contract has 6 decimals
+		uint256 amountToBorrow = 1000000 * 1000000;
+		// Verify that contract did borrow
+		require(endBalance > amountToBorrow, "Your contract does not hold 1M dollars");
+
+		// Trigger flash loan repayment function
+		studentExercice[msg.sender].repayFlashLoan();
+
+		// Distributing points
+		if (!exerciceProgression[msg.sender][9])
+		{
+			exerciceProgression[msg.sender][9] = true;
+			TDAAVE.distributeTokens(msg.sender, 4);
 		}
 	}
 
