@@ -1,4 +1,4 @@
-# AMM 101
+# Lending 101
 
 ## Introduction
 Welcome! This is an automated workshop that will guide you into using AAVE and doing a simple integration in a smart contract.
@@ -58,8 +58,8 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Publish the code of the Evaluator on Etherscan using the "Verify and publish" functionnality 
 
 ## TD addresses
-- Points contracts ``
-- Evaluator ``
+- Points contracts `0xEA6eF07Eb2D93F618120fF8AD6537f562e011790`
+- Evaluator `0xF00a099b637841fB2D240ABEeDeb48719836fd6D`
 
 
 

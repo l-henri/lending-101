@@ -20,7 +20,7 @@ contract Evaluator
  	mapping(address => IExerciceSolution) public studentExercice;
  	mapping(address => bool) public hasBeenPaired;
 
- 	event constructedCorrectly(address erc20Address, address adaiAddress, address aUsdcAddress, address variableDebtUSDCAddress);
+ 	event constructedCorrectly(address erc20Address, address adaiAddress, address UsdcAddress, address variableDebtUSDCAddress);
 	constructor(ERC20TD _TDAAVE, IERC20 _aDAI, IERC20 _USDC, IERC20 _variableDebtUSDC) 
 	public 
 	{
