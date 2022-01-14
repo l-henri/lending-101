@@ -19,6 +19,7 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 - The Evaluator contract sometimes needs to make payments to buy your tokens. Make sure he has enough ETH to do so! If not, you can send ETH directly to the contract.
 
 ### Getting to work
+- Claim testnet ETH on [this faucet](https://faucet.paradigm.xyz/)
 - Clone the repo on your machine
 - Install the required packages `npm install truffle`, `npm install @openzeppelin/contracts@3.4.1` , `npm install @truffle/hdwallet-provider`, `npm i @supercharge/strings`
 - Rename `example-truffle-config.js` to `truffle-config.js` . That is now your truffle config file.
