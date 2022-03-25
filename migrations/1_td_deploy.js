@@ -16,9 +16,9 @@ module.exports = (deployer, network, accounts) => {
 
 async function deployTDToken(deployer, network, accounts) {
 	TDToken = await TDErc20.new("TD-AAVE-101","TD-AAVE-101",web3.utils.toBN("20000000000000000000000000000"))
-	aDAIAddress = "0xdcf0af9e59c002fa3aa091a46196b37530fd48a8"
-	USDCAddress = "0xe22da380ee6b445bb8273c81944adeb6e8450422"
-	variableDebtUSDCAddress = "0xbe9b058a0f2840130372a81ebb3181dce02be957"
+	aDAIAddress = "0x43e8058dfa2ddea046180e1c57a41a1760e4ac60"
+	USDCAddress = "0x5b8b635c2665791cf62fe429cb149eab42a3ced8"
+	variableDebtUSDCAddress = "0x7f7d85ec65b50fb50527f784a702e35ce4e76111"
 }
 
 async function deployEvaluator(deployer, network, accounts) {

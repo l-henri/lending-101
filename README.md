@@ -61,10 +61,7 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Publish the code of the Evaluator on Etherscan using the "Verify and publish" functionnality 
 
 ## TD addresses
-- Points contracts [`0x94fE8d797CB968f3c05d587EfeF1551021f50fD9`](https://kovan.etherscan.io/address/0x94fE8d797CB968f3c05d587EfeF1551021f50fD9)
-- Evaluator [`0xeC353b7792cbc36437c5C8Accad39f8Bb88ebf10`](https://kovan.etherscan.io/address/0xeC353b7792cbc36437c5C8Accad39f8Bb88ebf10)
+- Points contracts [`0xeA9190644BD86A754acac85bA7FFaFb9C704D14a`](https://rinkeby.etherscan.io/address/0xeA9190644BD86A754acac85bA7FFaFb9C704D14a)
+- Evaluator [`0xbE79F83C11485321f28e4Ac659E5d580170a60Be`](https://rinkeby.etherscan.io/address/0xbE79F83C11485321f28e4Ac659E5d580170a60Be)
 
 
-
-TDToken 0x94fE8d797CB968f3c05d587EfeF1551021f50fD9
-Evaluator 0xeC353b7792cbc36437c5C8Accad39f8Bb88ebf10
