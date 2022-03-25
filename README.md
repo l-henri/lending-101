@@ -6,7 +6,7 @@ It is aimed at developpers that are familiar with Solidity and ERC20
 
 ## How to work on this TD
 ### Introduction
-The TD has three components:
+The TD has two components, deployed on the Kovan testnet:
 - An ERC20 token, ticker TD-AAVE-101, that is used to keep track of points 
 - An evaluator contract, that is able to mint and distribute TD-AAVE-101 points
 
@@ -39,16 +39,17 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 - Install truffle and create an empty truffle project. Create an infura API key to be able to deploy to the Kovan testnet
 
 ### AAVE basics
-- Deposit assets in AAVE (2 pts)
-- Borrow assets from AAVE (2 pts)
-- Repay assets to AAVE (2 pts)
-- Withdraw assets from AAVE (2 pts)
+Using [Aave's website](https://staging.aave.com/)
+- Deposit assets in AAVE and call `ex1_showIDepositedTokens()` to get points (2 pts)
+- Borrow assets from AAVE and call `ex2_showIBorrowedTokens()` to get points (2 pts)
+- Repay assets to AAVE and call `ex3_showIRepaidTokens()` to get points (2 pts)
+- Withdraw assets from AAVE and call `ex4_showIWithdrewTokens()` to get points (2 pts)
 
 ### AAVE integration
-- Write a smart contract that deposits assets in AAVE (2 pts)
-- Write a smart contract that borrow assets from AAVE (2 pts)
-- Write a smart contract that repays assets to AAVE (2 pts)
-- Write a smart contract that withdraw assets from AAVE (2 pts)
+- Write a smart contract that deposits assets in AAVE and call `ex5_showContractCanDepositTokens()` to get points (2 pts)
+- Write a smart contract that borrow assets from AAVE and call `ex6_showContractCanBorrowTokens()` to get points (2 pts)
+- Write a smart contract that repays assets to AAVE and call `ex7_showContractCanRepayTokens()` to get points (2 pts)
+- Write a smart contract that withdraw assets from AAVE and call `ex8_showContractCanWithdrawTokens()` to get points (2 pts)
 
 ### Flashloan
 - Write a smart contract that uses a FlashLoan (4 pts)
@@ -59,8 +60,8 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Publish the code of the Evaluator on Etherscan using the "Verify and publish" functionnality 
 
 ## TD addresses
-- Points contracts `0xEA6eF07Eb2D93F618120fF8AD6537f562e011790`
-- Evaluator `0xF00a099b637841fB2D240ABEeDeb48719836fd6D`
+- Points contracts [`0xEA6eF07Eb2D93F618120fF8AD6537f562e011790`](https://kovan.etherscan.io/address/0xEA6eF07Eb2D93F618120fF8AD6537f562e011790)
+- Evaluator [`0xF00a099b637841fB2D240ABEeDeb48719836fd6D`](https://kovan.etherscan.io/address/0xF00a099b637841fB2D240ABEeDeb48719836fd6D)
 
 
 
