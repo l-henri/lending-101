@@ -6,7 +6,7 @@ It is aimed at developpers that are familiar with Solidity and ERC20
 
 ## How to work on this TD
 ### Introduction
-The TD has two components, deployed on the Kovan testnet:
+The TD has two components, deployed on the Rinkeby testnet:
 - An ERC20 token, ticker TD-AAVE-101, that is used to keep track of points 
 - An evaluator contract, that is able to mint and distribute TD-AAVE-101 points
 
@@ -20,6 +20,7 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 
 ### Getting to work
 - Claim testnet ETH on [this faucet](https://faucet.paradigm.xyz/)
+- Claim fake tokens from [AAVE's faucet](https://v3-test.aave.com/#/faucet)
 - Clone the repo on your machine
 - Install the required packages `npm install truffle`, `npm install @openzeppelin/contracts@3.4.1` , `npm install @truffle/hdwallet-provider`, `npm i @supercharge/strings`
 - Rename `example-truffle-config.js` to `truffle-config.js` . That is now your truffle config file.
@@ -39,7 +40,7 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 - Install truffle and create an empty truffle project. Create an infura API key to be able to deploy to the Kovan testnet
 
 ### AAVE basics
-Using [Aave's website](https://staging.aave.com/)
+Using [Aave's website](https://v3-test.aave.com/)
 - Deposit assets in AAVE and call `ex1_showIDepositedTokens()` to get points (2 pts)
 - Borrow assets from AAVE and call `ex2_showIBorrowedTokens()` to get points (2 pts)
 - Repay assets to AAVE and call `ex3_showIRepaidTokens()` to get points (2 pts)
@@ -60,8 +61,10 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Publish the code of the Evaluator on Etherscan using the "Verify and publish" functionnality 
 
 ## TD addresses
-- Points contracts [`0xEA6eF07Eb2D93F618120fF8AD6537f562e011790`](https://kovan.etherscan.io/address/0xEA6eF07Eb2D93F618120fF8AD6537f562e011790)
-- Evaluator [`0xF00a099b637841fB2D240ABEeDeb48719836fd6D`](https://kovan.etherscan.io/address/0xF00a099b637841fB2D240ABEeDeb48719836fd6D)
+- Points contracts [`0x94fE8d797CB968f3c05d587EfeF1551021f50fD9`](https://kovan.etherscan.io/address/0x94fE8d797CB968f3c05d587EfeF1551021f50fD9)
+- Evaluator [`0xeC353b7792cbc36437c5C8Accad39f8Bb88ebf10`](https://kovan.etherscan.io/address/0xeC353b7792cbc36437c5C8Accad39f8Bb88ebf10)
 
 
 
+TDToken 0x94fE8d797CB968f3c05d587EfeF1551021f50fD9
+Evaluator 0xeC353b7792cbc36437c5C8Accad39f8Bb88ebf10

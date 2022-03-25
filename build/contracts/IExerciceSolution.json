@@ -44,25 +44,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"borrowSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"doAFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repayFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repaySomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/lending-101/contracts/IExerciceSolution.sol\":\"IExerciceSolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/lending-101/contracts/IExerciceSolution.sol\":{\"keccak256\":\"0x9ac5bb81d4ca0c0691dbe3bd16ee829f69d84c060596075272cb32fbd79a3f22\",\"urls\":[\"bzz-raw://f6ef4fd00b1c4d3c8790d2d9c64b114070f7135783b85d6874a3f6cf43f57f6e\",\"dweb:/ipfs/QmYU3f3AZD1nsEtVwZ3p8F1KtBM2scbT1qWGekZmgPryyW\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"borrowSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"doAFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repayFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repaySomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IExerciceSolution.sol\":\"IExerciceSolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IExerciceSolution.sol\":{\"keccak256\":\"0x9ac5bb81d4ca0c0691dbe3bd16ee829f69d84c060596075272cb32fbd79a3f22\",\"urls\":[\"bzz-raw://f6ef4fd00b1c4d3c8790d2d9c64b114070f7135783b85d6874a3f6cf43f57f6e\",\"dweb:/ipfs/QmYU3f3AZD1nsEtVwZ3p8F1KtBM2scbT1qWGekZmgPryyW\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.6.0;\n\ninterface IExerciceSolution \n{\n\tfunction depositSomeTokens() external;\n\n\tfunction withdrawSomeTokens() external;\n\n\tfunction borrowSomeTokens() external;\n\n\tfunction repaySomeTokens() external;\n\n\tfunction doAFlashLoan() external;\n\n\tfunction repayFlashLoan() external;\n}\n\n",
-  "sourcePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/lending-101/contracts/IExerciceSolution.sol",
+  "sourcePath": "/Users/henrilieutaud/Documents/Workshop/Solidity/lending-101/contracts/IExerciceSolution.sol",
   "ast": {
-    "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/lending-101/contracts/IExerciceSolution.sol",
+    "absolutePath": "project:/contracts/IExerciceSolution.sol",
     "exportedSymbols": {
       "IExerciceSolution": [
-        850
+        1767
       ]
     },
-    "id": 851,
+    "id": 1768,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 831,
+        "id": 1748,
         "literals": [
           "solidity",
           "^",
@@ -70,7 +70,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:6"
       },
       {
         "abstract": false,
@@ -79,9 +79,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 850,
+        "id": 1767,
         "linearizedBaseContracts": [
-          850
+          1767
         ],
         "name": "IExerciceSolution",
         "nodeType": "ContractDefinition",
@@ -90,7 +90,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "f6b96bae",
-            "id": 834,
+            "id": 1751,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -98,19 +98,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 832,
+              "id": 1749,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "83:2:2"
+              "src": "83:2:6"
             },
             "returnParameters": {
-              "id": 833,
+              "id": 1750,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "94:0:2"
+              "src": "94:0:6"
             },
-            "scope": 850,
-            "src": "57:38:2",
+            "scope": 1767,
+            "src": "57:38:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -119,7 +119,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "db50609f",
-            "id": 837,
+            "id": 1754,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -127,19 +127,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 835,
+              "id": 1752,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "125:2:2"
+              "src": "125:2:6"
             },
             "returnParameters": {
-              "id": 836,
+              "id": 1753,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "136:0:2"
+              "src": "136:0:6"
             },
-            "scope": 850,
-            "src": "98:39:2",
+            "scope": 1767,
+            "src": "98:39:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -148,7 +148,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "1a231a71",
-            "id": 840,
+            "id": 1757,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -156,19 +156,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 838,
+              "id": 1755,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "165:2:2"
+              "src": "165:2:6"
             },
             "returnParameters": {
-              "id": 839,
+              "id": 1756,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "176:0:2"
+              "src": "176:0:6"
             },
-            "scope": 850,
-            "src": "140:37:2",
+            "scope": 1767,
+            "src": "140:37:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -177,7 +177,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "4b5bd34f",
-            "id": 843,
+            "id": 1760,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -185,19 +185,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 841,
+              "id": 1758,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "204:2:2"
+              "src": "204:2:6"
             },
             "returnParameters": {
-              "id": 842,
+              "id": 1759,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "215:0:2"
+              "src": "215:0:6"
             },
-            "scope": 850,
-            "src": "180:36:2",
+            "scope": 1767,
+            "src": "180:36:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -206,7 +206,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "d871f594",
-            "id": 846,
+            "id": 1763,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -214,19 +214,19 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 844,
+              "id": 1761,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "240:2:2"
+              "src": "240:2:6"
             },
             "returnParameters": {
-              "id": 845,
+              "id": 1762,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "251:0:2"
+              "src": "251:0:6"
             },
-            "scope": 850,
-            "src": "219:33:2",
+            "scope": 1767,
+            "src": "219:33:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -235,7 +235,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "fc6669b6",
-            "id": 849,
+            "id": 1766,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -243,36 +243,36 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 847,
+              "id": 1764,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "278:2:2"
+              "src": "278:2:6"
             },
             "returnParameters": {
-              "id": 848,
+              "id": 1765,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "289:0:2"
+              "src": "289:0:6"
             },
-            "scope": 850,
-            "src": "255:35:2",
+            "scope": 1767,
+            "src": "255:35:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 851,
-        "src": "25:267:2"
+        "scope": 1768,
+        "src": "25:267:6"
       }
     ],
-    "src": "0:294:2"
+    "src": "0:294:6"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/henrilieutaud/Documents/Mes documents/ESILV/Workshop/lending-101/contracts/IExerciceSolution.sol",
+      "absolutePath": "project:/contracts/IExerciceSolution.sol",
       "exportedSymbols": {
         "IExerciceSolution": [
-          850
+          1767
         ]
       }
     },
@@ -286,9 +286,9 @@
             ".0"
           ]
         },
-        "id": 831,
+        "id": 1748,
         "name": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:6"
       },
       {
         "attributes": {
@@ -303,10 +303,10 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            850
+            1767
           ],
           "name": "IExerciceSolution",
-          "scope": 851
+          "scope": 1768
         },
         "children": [
           {
@@ -322,7 +322,7 @@
               ],
               "name": "depositSomeTokens",
               "overrides": null,
-              "scope": 850,
+              "scope": 1767,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -335,9 +335,9 @@
                   ]
                 },
                 "children": [],
-                "id": 832,
+                "id": 1749,
                 "name": "ParameterList",
-                "src": "83:2:2"
+                "src": "83:2:6"
               },
               {
                 "attributes": {
@@ -346,14 +346,14 @@
                   ]
                 },
                 "children": [],
-                "id": 833,
+                "id": 1750,
                 "name": "ParameterList",
-                "src": "94:0:2"
+                "src": "94:0:6"
               }
             ],
-            "id": 834,
+            "id": 1751,
             "name": "FunctionDefinition",
-            "src": "57:38:2"
+            "src": "57:38:6"
           },
           {
             "attributes": {
@@ -368,7 +368,7 @@
               ],
               "name": "withdrawSomeTokens",
               "overrides": null,
-              "scope": 850,
+              "scope": 1767,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -381,9 +381,9 @@
                   ]
                 },
                 "children": [],
-                "id": 835,
+                "id": 1752,
                 "name": "ParameterList",
-                "src": "125:2:2"
+                "src": "125:2:6"
               },
               {
                 "attributes": {
@@ -392,14 +392,14 @@
                   ]
                 },
                 "children": [],
-                "id": 836,
+                "id": 1753,
                 "name": "ParameterList",
-                "src": "136:0:2"
+                "src": "136:0:6"
               }
             ],
-            "id": 837,
+            "id": 1754,
             "name": "FunctionDefinition",
-            "src": "98:39:2"
+            "src": "98:39:6"
           },
           {
             "attributes": {
@@ -414,7 +414,7 @@
               ],
               "name": "borrowSomeTokens",
               "overrides": null,
-              "scope": 850,
+              "scope": 1767,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -427,9 +427,9 @@
                   ]
                 },
                 "children": [],
-                "id": 838,
+                "id": 1755,
                 "name": "ParameterList",
-                "src": "165:2:2"
+                "src": "165:2:6"
               },
               {
                 "attributes": {
@@ -438,14 +438,14 @@
                   ]
                 },
                 "children": [],
-                "id": 839,
+                "id": 1756,
                 "name": "ParameterList",
-                "src": "176:0:2"
+                "src": "176:0:6"
               }
             ],
-            "id": 840,
+            "id": 1757,
             "name": "FunctionDefinition",
-            "src": "140:37:2"
+            "src": "140:37:6"
           },
           {
             "attributes": {
@@ -460,7 +460,7 @@
               ],
               "name": "repaySomeTokens",
               "overrides": null,
-              "scope": 850,
+              "scope": 1767,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -473,9 +473,9 @@
                   ]
                 },
                 "children": [],
-                "id": 841,
+                "id": 1758,
                 "name": "ParameterList",
-                "src": "204:2:2"
+                "src": "204:2:6"
               },
               {
                 "attributes": {
@@ -484,14 +484,14 @@
                   ]
                 },
                 "children": [],
-                "id": 842,
+                "id": 1759,
                 "name": "ParameterList",
-                "src": "215:0:2"
+                "src": "215:0:6"
               }
             ],
-            "id": 843,
+            "id": 1760,
             "name": "FunctionDefinition",
-            "src": "180:36:2"
+            "src": "180:36:6"
           },
           {
             "attributes": {
@@ -506,7 +506,7 @@
               ],
               "name": "doAFlashLoan",
               "overrides": null,
-              "scope": 850,
+              "scope": 1767,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -519,9 +519,9 @@
                   ]
                 },
                 "children": [],
-                "id": 844,
+                "id": 1761,
                 "name": "ParameterList",
-                "src": "240:2:2"
+                "src": "240:2:6"
               },
               {
                 "attributes": {
@@ -530,14 +530,14 @@
                   ]
                 },
                 "children": [],
-                "id": 845,
+                "id": 1762,
                 "name": "ParameterList",
-                "src": "251:0:2"
+                "src": "251:0:6"
               }
             ],
-            "id": 846,
+            "id": 1763,
             "name": "FunctionDefinition",
-            "src": "219:33:2"
+            "src": "219:33:6"
           },
           {
             "attributes": {
@@ -552,7 +552,7 @@
               ],
               "name": "repayFlashLoan",
               "overrides": null,
-              "scope": 850,
+              "scope": 1767,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -565,9 +565,9 @@
                   ]
                 },
                 "children": [],
-                "id": 847,
+                "id": 1764,
                 "name": "ParameterList",
-                "src": "278:2:2"
+                "src": "278:2:6"
               },
               {
                 "attributes": {
@@ -576,32 +576,32 @@
                   ]
                 },
                 "children": [],
-                "id": 848,
+                "id": 1765,
                 "name": "ParameterList",
-                "src": "289:0:2"
+                "src": "289:0:6"
               }
             ],
-            "id": 849,
+            "id": 1766,
             "name": "FunctionDefinition",
-            "src": "255:35:2"
+            "src": "255:35:6"
           }
         ],
-        "id": 850,
+        "id": 1767,
         "name": "ContractDefinition",
-        "src": "25:267:2"
+        "src": "25:267:6"
       }
     ],
-    "id": 851,
+    "id": 1768,
     "name": "SourceUnit",
-    "src": "0:294:2"
+    "src": "0:294:6"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2022-01-14T10:23:08.018Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-03-25T17:20:12.053Z",
   "devdoc": {
     "methods": {}
   },
