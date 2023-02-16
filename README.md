@@ -6,7 +6,7 @@ It is aimed at developpers that are familiar with Solidity and ERC20
 
 ## How to work on this TD
 ### Introduction
-The TD has two components, deployed on the Rinkeby testnet:
+The TD has two components, deployed on the goerli testnet:
 - An ERC20 token, ticker TD-AAVE-101, that is used to keep track of points 
 - An evaluator contract, that is able to mint and distribute TD-AAVE-101 points
 
@@ -61,7 +61,7 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Publish the code of the Evaluator on Etherscan using the "Verify and publish" functionnality 
 
 ## TD addresses
-- Points contracts [`0xeA9190644BD86A754acac85bA7FFaFb9C704D14a`](https://rinkeby.etherscan.io/address/0xeA9190644BD86A754acac85bA7FFaFb9C704D14a)
-- Evaluator [`0xbE79F83C11485321f28e4Ac659E5d580170a60Be`](https://rinkeby.etherscan.io/address/0xbE79F83C11485321f28e4Ac659E5d580170a60Be)
+- Points contracts [`0x27Dc7374e1C5BF954Daf6Be846598Af76A33F2a2`](https://goerli.etherscan.io/address/0x27Dc7374e1C5BF954Daf6Be846598Af76A33F2a2)
+- Evaluator [`0xaeaD98593a19074375cCf3ec22E111ce48C02c7E`](https://goerli.etherscan.io/address/0xaeaD98593a19074375cCf3ec22E111ce48C02c7E)
 
 

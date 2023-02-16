@@ -15,10 +15,10 @@ module.exports = (deployer, network, accounts) => {
 };
 
 async function deployTDToken(deployer, network, accounts) {
-	TDToken = await TDErc20.new("TD-AAVE-101","TD-AAVE-101",web3.utils.toBN("20000000000000000000000000000"))
-	aDAIAddress = "0x43e8058dfa2ddea046180e1c57a41a1760e4ac60"
-	USDCAddress = "0x5b8b635c2665791cf62fe429cb149eab42a3ced8"
-	variableDebtUSDCAddress = "0x7f7d85ec65b50fb50527f784a702e35ce4e76111"
+	TDToken = await TDErc20.new("TD-AAVE-101","TD-AAVE-101",web3.utils.toBN("42000000000000000000000000000"))
+	aDAIAddress = "0xADD98B0342e4094Ec32f3b67Ccfd3242C876ff7a"
+	USDCAddress = "0x65afadd39029741b3b8f0756952c74678c9cec93"
+	variableDebtUSDCAddress = "0x4DAe67e69aCed5ca8f99018246e6476F82eBF9ab"
 }
 
 async function deployEvaluator(deployer, network, accounts) {
@@ -36,3 +36,7 @@ async function deployRecap(deployer, network, accounts) {
 }
 
 
+
+
+// truffle run verify ERC20TD@0x27Dc7374e1C5BF954Daf6Be846598Af76A33F2a2 --network goerli 
+// truffle run verify Evaluator@0xaeaD98593a19074375cCf3ec22E111ce48C02c7E --network goerli 
