@@ -19,8 +19,8 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 - The Evaluator contract sometimes needs to make payments to buy your tokens. Make sure he has enough ETH to do so! If not, you can send ETH directly to the contract.
 
 ### Getting to work
-- Claim testnet ETH on [this faucet](https://faucet.paradigm.xyz/)
-- Claim fake tokens from [AAVE's faucet](https://v3-test.aave.com/#/faucet)
+- Claim testnet ETH on [this faucet](https://goerlifaucet.com/)
+- Claim fake tokens from AAVE's faucet. Go to their [website](https://app.aave.com/), activate testnet mode, and find the faucet 
 - Clone the repo on your machine
 - Install the required packages `npm install truffle`, `npm install @openzeppelin/contracts@3.4.1` , `npm install @truffle/hdwallet-provider`, `npm i @supercharge/strings`
 - Rename `example-truffle-config.js` to `truffle-config.js` . That is now your truffle config file.
@@ -40,7 +40,8 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 - Install truffle and create an empty truffle project. Create an infura API key to be able to deploy to the Kovan testnet
 
 ### AAVE basics
-Using [Aave's website](https://v3-test.aave.com/)
+Using [Aave's website](https://app.aave.com/)
+- Activate the testnet option by clicking on the wheel in the top right part of the screen
 - Deposit assets in AAVE and call `ex1_showIDepositedTokens()` to get points (2 pts)
 - Borrow assets from AAVE and call `ex2_showIBorrowedTokens()` to get points (2 pts)
 - Repay assets to AAVE and call `ex3_showIRepaidTokens()` to get points (2 pts)
