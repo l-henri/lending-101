@@ -62,7 +62,7 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 - Publish the code of the Evaluator on Etherscan using the "Verify and publish" functionnality 
 
 ## TD addresses
-- Points contracts [`0x27Dc7374e1C5BF954Daf6Be846598Af76A33F2a2`](https://goerli.etherscan.io/address/0x27Dc7374e1C5BF954Daf6Be846598Af76A33F2a2)
-- Evaluator [`0xaeaD98593a19074375cCf3ec22E111ce48C02c7E`](https://goerli.etherscan.io/address/0xaeaD98593a19074375cCf3ec22E111ce48C02c7E)
+- Points contracts [`0x1848C2633D0467242cb0B09408b1a8d21cAEF4fe`](https://goerli.etherscan.io/address/0x1848C2633D0467242cb0B09408b1a8d21cAEF4fe)
+- Evaluator [`0x587aF5b67C6b5c3E8B2f256b54C4b2cd169cF0CF`](https://goerli.etherscan.io/address/0x587aF5b67C6b5c3E8B2f256b54C4b2cd169cF0CF)
 
 

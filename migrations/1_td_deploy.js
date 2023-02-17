@@ -19,10 +19,11 @@ async function deployTDToken(deployer, network, accounts) {
 	aDAIAddress = "0xADD98B0342e4094Ec32f3b67Ccfd3242C876ff7a"
 	USDCAddress = "0x65afadd39029741b3b8f0756952c74678c9cec93"
 	variableDebtUSDCAddress = "0x4DAe67e69aCed5ca8f99018246e6476F82eBF9ab"
+	AAVEPool = "0x7b5c526b7f8dfdff278b4a3e045083fba4028790"
 }
 
 async function deployEvaluator(deployer, network, accounts) {
-	Evaluator = await evaluator.new(TDToken.address, aDAIAddress, USDCAddress, variableDebtUSDCAddress)
+	Evaluator = await evaluator.new(TDToken.address, aDAIAddress, USDCAddress, variableDebtUSDCAddress, AAVEPool)
 }
 
 async function setPermissionsAndRandomValues(deployer, network, accounts) {
