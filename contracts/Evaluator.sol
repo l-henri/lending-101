@@ -3,6 +3,7 @@ pragma experimental ABIEncoderV2;
 
 import "./ERC20TD.sol";
 import "./IExerciceSolution.sol";
+import "./IFlashLoanSimpleReceiver.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 // import "./utils/IUniswapV2Factory.sol";
@@ -15,19 +16,21 @@ contract Evaluator
 	IERC20 public aDAI;
 	IERC20 public USDC;
 	IERC20 public variableDebtUSDC;
+	address public AAVEPool;
 
  	mapping(address => mapping(uint256 => bool)) public exerciceProgression;
  	mapping(address => IExerciceSolution) public studentExercice;
  	mapping(address => bool) public hasBeenPaired;
 
  	event constructedCorrectly(address erc20Address, address adaiAddress, address UsdcAddress, address variableDebtUSDCAddress);
-	constructor(ERC20TD _TDAAVE, IERC20 _aDAI, IERC20 _USDC, IERC20 _variableDebtUSDC) 
+	constructor(ERC20TD _TDAAVE, IERC20 _aDAI, IERC20 _USDC, IERC20 _variableDebtUSDC, address _AAVEPool) 
 	public 
 	{
 		TDAAVE = _TDAAVE;
 		aDAI = _aDAI;
 		USDC = _USDC;
 		variableDebtUSDC = _variableDebtUSDC;
+		AAVEPool = _AAVEPool;
 		emit constructedCorrectly(address(TDAAVE), address(aDAI), address(USDC), address(variableDebtUSDC));
 
 	}
@@ -197,30 +200,61 @@ contract Evaluator
 		}
 	}
 
-	function ex9_performFlashLoan()
-	public
-	{	
+	// Exercice 9 - Verify that you are able to execute a flash loan
+	// To validate this exercice, your solution needs to:
+	// - Get a flashloan with Aave, for 1M USDC
+	// - Set the flashloan call so that it calls back this contract 
+	// - Implement a executeOperation() function that handles loan repayment, including the fees
+	// The flow is: 
+	// - Your contract calls AAVE's Pool on flashLoanSimple()
+	// - The pool calls the evaluator on executeOperation()
+	// - The evaluator calls your contract on executeOperation()
+	// - The call returns to the evaluator
+	// - The call returns to the pool
+	// - The call returns to your contract
+
+	function executeOperation(
+		address asset,
+		uint256 amount,
+		uint256 premium,
+		address initiator,
+		bytes calldata params
+		) 
+	external 
+	returns (bool)
+	{
 		// Check https://docs.aave.com/developers/guides/flash-loans
 
-		// Trigger flash loan launch function
-		studentExercice[msg.sender].doAFlashLoan();
-
-		// Read end balance
-		uint256 endBalance = USDC.balanceOf(address(studentExercice[msg.sender]));
-
-		// Your contract has to borrow 1M USDC. The USDC contract has 6 decimals
-		uint256 amountToBorrow = 1000000 * 1000000;
-		// Verify that contract did borrow
-		require(endBalance > amountToBorrow, "Your contract does not hold 1M dollars");
+		// Verify that caller is AAVE
+		require(msg.sender == AAVEPool);
 
 		// Distributing points
-		if (!exerciceProgression[msg.sender][9])
+		if (!exerciceProgression[initiator][9])
 		{
-			exerciceProgression[msg.sender][9] = true;
-			TDAAVE.distributeTokens(msg.sender, 4);
+			exerciceProgression[initiator][9] = true;
+			TDAAVE.distributeTokens(initiator, 4);
 		}
+
+		// Transmit call to initiator
+		require(IFlashLoanSimpleReceiver(initiator).executeOperation(
+        asset,
+        amount,
+        premium,
+        initiator,
+        params
+      ),
+		"initiator receiver failed");
+
+		return(true);
+
 	}
 
+	function ex9_performFlashLoan(address studentAddress)
+	public
+	{	
+
+
+	}
 
 	modifier onlyTeachers() 
 	{
