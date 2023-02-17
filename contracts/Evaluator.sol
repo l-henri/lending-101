@@ -200,10 +200,12 @@ contract Evaluator
 	function ex9_performFlashLoan()
 	public
 	{	
+		// This function checks that you have 1 million dollar
+		// The easiest way to do this is to:
+		// - Do a flash loan from your contract
+		// - Call this function from your contract, and collect points
+		// - Repay your flash loan
 		// Check https://docs.aave.com/developers/guides/flash-loans
-
-		// Trigger flash loan launch function
-		studentExercice[msg.sender].doAFlashLoan();
 
 		// Read end balance
 		uint256 endBalance = USDC.balanceOf(address(studentExercice[msg.sender]));
