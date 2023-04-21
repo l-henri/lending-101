@@ -22,16 +22,15 @@ Your objective is to gather as many TD-AAVE-101 points as possible. Please note 
 - Claim testnet ETH on [this faucet](https://goerlifaucet.com/)
 - Claim fake tokens from AAVE's faucet. Go to their [website](https://app.aave.com/), activate testnet mode, and find the faucet 
 - Clone the repo on your machine
-- Install the required packages `npm install truffle`, `npm install @openzeppelin/contracts@3.4.1` , `npm install @truffle/hdwallet-provider`, `npm i @supercharge/strings`
-- Rename `example-truffle-config.js` to `truffle-config.js` . That is now your truffle config file.
-- Configure a seed for deployment of contracts in your truffle config file
-- Register for an infura key and set it up in your truffle config file
-- Download and launch Ganache
-- Test that you are able to connect to the ganache network with `truffle console`
-- Test that you are able to connect to the kovan network with `truffle console --network kovan`
+- Install the required packages `npm i`
+- Register for an infura API key 
+- Register for an etherscan API key 
+- Create a `.env` file that contains a mnemonic phrase for deployment, an infura API key and an Etherscan API key. 
+- Test that you are able to connect to the Kovan network with `npx hardhat console --network kovan`
+- To deploy a contract, configure a script in the [scripts folder](scripts). Look at the way the TD is deployed and try to iterate
+- Test your deployment locallly with `npx hardhat run scripts/your-script.js`
 - To deploy a contract, configure a migration in the [migration folder](migrations). Look at the way the TD is deploy and try to iterate
-- Test your deployment in Ganache `truffle migrate`
-- Deploy on Kovan `truffle migrate --network kovan --skip-dry-run`
+- Deploy on Kovan `npx hardhat run scripts/your-script.js --network kovan`
 
 
 ## Points list
