@@ -1,8 +1,7 @@
 // Copied on 17/02/2023 from https://github.com/aave/aave-v3-core/blob/master/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol
 
-// SPDX-License-Identifier: AGPL-3.0
-pragma solidity ^0.6.0;
-
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
 
 /**
  * @title IFlashLoanSimpleReceiver
